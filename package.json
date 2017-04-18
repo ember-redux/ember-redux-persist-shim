@@ -1,6 +1,6 @@
 {
   "name": "ember-redux-persist-shim",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "redux-persist shim for ember-cli",
   "keywords": [
     "ember-addon",
@@ -28,6 +28,7 @@
     "broccoli-babel-transpiler": "6.0.0-alpha.1"
   },
   "devDependencies": {
+    "broccoli-string-replace": "^0.1.2",
     "broccoli-asset-rev": "^2.4.5",
     "ember-ajax": "^2.4.1",
     "ember-cli": "2.13.0-beta.3",
