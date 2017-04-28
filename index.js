@@ -16,9 +16,6 @@ module.exports = {
       patterns: [{
         match: /process\.env\.NODE_ENV/g,
         replacement: JSON.stringify(process.env.EMBER_ENV)
-      }, {
-        match: /global\.setImmediate/g,
-        replacement: '(fn) => setTimeout(fn, 0)'
       }]
     });
 
