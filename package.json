@@ -1,6 +1,6 @@
 {
   "name": "ember-redux-persist-shim",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "redux-persist shim for ember-cli",
   "keywords": [
     "ember-addon",
@@ -44,6 +44,10 @@
     "ember-load-initializers": "^1.0.0",
     "ember-resolver": "^4.0.0",
     "ember-source": "~2.13.0",
+    "ember-lodash-es-shim": "^1.0.0",
+    "ember-json-stringify-safe-shim": "^1.0.0",
+    "lodash-es": "^4.17.4",
+    "json-stringify-safe-es": "0.0.3",
     "loader.js": "^4.2.3",
     "redux-persist": "^4.7.1"
   },
