@@ -1,6 +1,6 @@
 {
   "name": "ember-redux-persist-shim",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "redux-persist shim for ember-cli",
   "keywords": [
     "ember-addon",
