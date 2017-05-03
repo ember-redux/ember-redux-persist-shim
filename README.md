@@ -1,5 +1,7 @@
 # ember-redux-persist-shim
 
+[![Travis][ci-img]][ci-url] [![NPM][npm-img]][npm-url] ![Ember][ember-img]
+
 babel 6 is required so please use ember-cli v2.13.0+
 
 ## Installation
