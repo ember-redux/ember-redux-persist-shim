@@ -1,8 +1,7 @@
 module.exports = {
   afterInstall: function () {
     return this.addPackagesToProject([
-      {name: 'redux-persist', target: '4.7.1'},
-      {name: 'babel-preset-stage-2', target: '6.24.1'}
+      {name: 'redux-persist', target: '4.8.0'}
     ])
   },
 

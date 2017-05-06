@@ -3,7 +3,6 @@
 
 const mergeTrees = require('broccoli-merge-trees');
 const path = require('path');
-const esTranspiler = require('broccoli-babel-transpiler');
 const replace = require('broccoli-string-replace');
 
 module.exports = {
@@ -19,10 +18,16 @@ module.exports = {
       }]
     });
 
-    const persistTree = esTranspiler(denodifiedPersist, {
-      presets: [
-          ['stage-2']
-      ]
+
+    let addon = this.addons.find(addon => addon.name === 'ember-cli-babel');
+    let persistTree = addon.transpileTree(denodifiedPersist, {
+      babel: {
+        plugins: ['transform-object-rest-spread'],
+        presets: ['stage-2']
+      },
+      'ember-cli-babel': {
+        compileModules: false
+      }
     });
 
     if (!tree) {
