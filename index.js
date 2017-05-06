@@ -12,10 +12,16 @@ module.exports = {
 
     const denodifiedPersist = replace(persistPath, {
       files: [ '**/*.js' ],
-      patterns: [{
-        match: /process\.env\.NODE_ENV/g,
-        replacement: JSON.stringify(process.env.EMBER_ENV)
-      }]
+      patterns: [
+        {
+          match: /process\.env\.NODE_ENV/g,
+          replacement: JSON.stringify(process.env.EMBER_ENV)
+        },
+        {
+          match: /import isPlainObject from 'lodash\/isPlainObject'/g,
+          replacement: "import lodash from 'lodash'\nconst isPlainObject = lodash.isPlainObject"
+        }
+      ]
     });
 
 
